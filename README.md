@@ -1,3 +1,4 @@
-h2 simple-page using HTML, CSS
+# Simple Page using HTML and CSS
 
-# live preview['https://dynn01.github.io/simple-page/']
+## live preview
+[Demo Project](https://dynn01.github.io/simple-page/)
