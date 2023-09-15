@@ -17,6 +17,10 @@
     margin: auto;
 }
 
+.menu-icon {
+    display: none;
+}
+
 .icon{
     width: 200px;
     height: 70px;
@@ -27,12 +31,13 @@
     color: #ff7200;
     font-size: 35px;
     font-family: Arial;
-    padding-left: 0;
+    /* padding-left: 0; */
     float: left;
     padding-top: 15px;
 }
 
 .menu{
+    display: block;
     width: 400px;
     height: 70px;
     float: left;
@@ -158,7 +163,7 @@ ul li a:hover{
     font-size: 60px;
 }
 
-.form{
+.form {
     width: 250px;
     height: 370px;
     background: linear-gradient(to top, rgba(0,0,0,0.6)50%, rgba(0,0,0,0.6)50%);
@@ -262,4 +267,91 @@ ul li a:hover{
 
 .icons ion-icon:hover{
     color: #ff7200;
+}
+
+@media screen and (max-width: 576px){
+
+    .main{
+        width: 100%;
+        background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(../img/bg.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 120vh;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar{
+        width: auto;
+        height: 50px;
+    }
+
+    .logo{
+        /* color: #ff7200; */
+        padding-left: 10px !important;
+        font-size: 25px;
+        /* font-family: Arial; */
+        padding-left: 30px;
+        /* float: left; */
+        padding-top: 12px;
+    }
+    
+    .menu{
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .content {
+        /* display: flex; */
+        /* flex-direction: column; */
+        width: 80%;
+        height: 0;
+        padding-top: 0;
+        margin: 20px;
+        position: relative ;
+    }
+
+    .content h1{
+        font-family: 'Times New Roman';
+        font-size: 30px;
+        padding: 0px;
+        margin-top: 3%;
+        letter-spacing: 1px;
+    }
+
+    .content .text{
+        padding-top: 10px;
+        padding-left: 0;
+        padding-bottom: 25px;
+        font-family: Arial;
+        letter-spacing: 2px;
+        line-height: 20px;
+    }
+
+    .content .btn-cn{
+        width: 120px;
+        height: 30px;
+        background: #ff7200;
+        border: none;
+        /* margin-bottom: 30px; */
+        margin-left: 0;
+        font-size: 15px;
+        /* border-radius: 10px; */
+        /* cursor: pointer; */
+        /* transition: 0.4s ease; */
+    }
+
+    .content span {
+        font-size: 35px;
+    }
+
+    .form {
+        position: unset;
+        margin-top: 37px;
+    }
 }
